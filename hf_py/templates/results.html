@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<link ref = 'stylesheet' href = 'static/hf.css'
+
+<h2> {{ the_title }} </h2>
+
+<P> You submited the following data: </P>
+
+<table>
+    <tr>
+        <td> Phrase: </td>
+        <td> {{ the_phrase }} </td>
+    </tr>
+    <tr>
+        <td> Letters: </td>
+        <td> {{ the_letters }} </td>
+        <tr>
+             <td>Match found:</td>
+             <td> {{ the_results }} </td>
+         </tr>
+    </tr>
+</table>
+
+<p> When"<b>{{ the_phrase }}</b>" is search for "<b>{{ the_letters }}</b>", the following results are returned:</p>
+
+<h3> {{ the_results }} </h3>
+<a ref = 'back to entry page' href = 'entry.html' />
+
+{% endblock %}
